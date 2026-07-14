@@ -83,7 +83,7 @@ npm run build
 
 <div align="center">
 
-**韩续为他热爱编织的妈妈而创作**
+**[韩续](https://hanxu.loomscape.xyz) 为他热爱编织的妈妈而创作**
 
 [![GitHub](https://img.shields.io/badge/GitHub-loomscape%2FZHIYOU-blue?logo=github)](https://github.com/loomscape/ZHIYOU)
 
