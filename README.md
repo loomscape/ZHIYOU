@@ -1,5 +1,9 @@
 <div align="center">
 
+![织游背景](public/织游.png)
+
+<br/>
+
 ![织游 ZhiYou](public/ZHIYOU.png)
 
 **Your warm knitting companion**
