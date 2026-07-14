@@ -1,26 +1,94 @@
 @import "tailwindcss";
 
+@theme {
+  /* Brand Colors - Loomscape VI */
+  --color-navy-deep: #1E2A3A;
+  --color-sage-green: #A3B39C;
+  --color-terracotta: #C26B4E;
+  --color-sand-warm: #D9C7A6;
+  --color-cream-off: #F6F2EB;
+  
+  /* Existing Theme Colors */
+  --color-sky-thread: #62C6FF;
+  --color-sky-thread-hover: #4DB8F5;
+  --color-mint-yarn: #7EE7C1;
+  --color-mint-yarn-hover: #5DD9AB;
+  --color-coral-stitch: #FF857A;
+  --color-coral-stitch-hover: #FF6B5E;
+  --color-butter-yellow: #FFD86B;
+  --color-butter-yellow-hover: #FFCC4D;
+  --color-lavender-loop: #BBA7FF;
+  --color-lavender-loop-hover: #A68FFF;
+  --color-cloud-white: #FFFDF8;
+  --color-pure-white: #FFFFFF;
+  --color-soft-linen: #E8E5DE;
+  --color-graphite: #343434;
+  --color-text-secondary: #6F6F6F;
+  --color-success-green: #53C88B;
+  --color-warning-amber: #FFB84D;
+  --color-error-red: #FF6B6B;
+
+  --font-sans: 'Inter', system-ui, -apple-system, sans-serif;
+  --font-mono: 'JetBrains Mono', monospace;
+
+  --radius-card: 20px;
+  --radius-button: 16px;
+  --radius-input: 14px;
+  --radius-panel: 24px;
+}
+
 :root {
-  --background: #ffffff;
-  --foreground: #171717;
+  --background: #FFFDF8;
+  --foreground: #343434;
 }
 
-@theme inline {
-  --color-background: var(--background);
-  --color-foreground: var(--foreground);
-  --font-sans: var(--font-geist-sans);
-  --font-mono: var(--font-geist-mono);
-}
-
-@media (prefers-color-scheme: dark) {
-  :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
-  }
+html {
+  height: auto;
+  min-height: 100%;
 }
 
 body {
   background: var(--background);
   color: var(--foreground);
-  font-family: Arial, Helvetica, sans-serif;
+  font-family: var(--font-sans);
+  margin: 0;
+  padding: 0;
+  min-height: 100%;
+  height: auto;
+  overflow-y: auto;
+  overflow-x: hidden;
+}
+
+.canvas-bg {
+  background-color: #FFFDF8;
+  background-image:
+    radial-gradient(circle at 1px 1px, #E8E5DE 1px, transparent 0);
+  background-size: 24px 24px;
+}
+
+.floating-panel {
+  backdrop-filter: blur(12px);
+  -webkit-backdrop-filter: blur(12px);
+}
+
+::-webkit-scrollbar {
+  width: 6px;
+  height: 6px;
+}
+
+::-webkit-scrollbar-track {
+  background: transparent;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #E8E5DE;
+  border-radius: 3px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #D4D0C8;
+}
+
+.konvajs-content {
+  border-radius: 20px !important;
 }
