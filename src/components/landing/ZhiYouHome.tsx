@@ -48,7 +48,17 @@ export function ZhiYouHome() {
       <div className="py-8 text-center text-sm text-graphite/80 relative z-10 space-y-2">
         <p>用爱编织 · Made with ❤️</p>
         <p>织游 ZhiYou · 开源软件</p>
-        <p className="text-graphite/60">韩续为他热爱编织的妈妈而创作</p>
+        <p className="text-graphite/60">
+              <a 
+                href="https://hanxu.loomscape.xyz" 
+                target="_blank" 
+                rel="noopener noreferrer"
+                className="hover:text-graphite transition-colors"
+              >
+                韩续
+              </a>
+              为他热爱编织的妈妈而创作
+            </p>
         <p className="text-graphite/60">本软件基于 AGPL-3.0 协议开源</p>
         <a 
           href="http://github.com/loomscape/ZHIYOU" 
